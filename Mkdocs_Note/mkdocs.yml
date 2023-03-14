@@ -8,13 +8,13 @@ theme:
   palette:
     #primary: blue grey
 
-    - scheme: default # 日间模式
-      primary: grey # 上方的
-      accent: cyan # 链接等可交互元件的高亮色
+    - scheme: default # 白天模式
+      primary: blue # 上方的
+      accent: deep orange # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+    - scheme: slate # 夜晚模式
       primary: black
       accent: cyan
       toggle:
