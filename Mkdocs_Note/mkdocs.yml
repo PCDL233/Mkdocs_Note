@@ -1,7 +1,7 @@
 #[Info]
 site_name: Mkdocs_Note
 site_url: https://PCDL233.github.io/Mkdocs_Note/
-site_author: #作者名
+site_author: CMQ
 #[UI]
 theme:
   name: material
@@ -14,7 +14,7 @@ theme:
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+    - scheme: slate # 夜晚模式
       primary: black
       accent: cyan
       toggle:
@@ -25,7 +25,7 @@ theme:
     #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
@@ -45,35 +45,35 @@ repo_name: Wcowin.github.io # 右上角的名字
 # [Navigtion]
 nav:
   - 博客:
-    - 好用/好玩网站分享: JavaScript学习笔记.md
-    - What is Github:
-    - 解决谷歌翻译用不了的问题:
-    - Mac/windows软件网站汇总:
-    - win11资源分享:
-    - Telegram 群组、频道、机器人 - 汇总分享:
+    - 好用/好玩网站分享: blog/Webplay.md
+    - What is Github: blog/Github.md
+    - 解决谷歌翻译用不了的问题: blog/googletranslate.md
+    - Mac/windows软件网站汇总: blog/macsoft.md
+    - win11资源分享: blog/win.md
+    - Telegram 群组、频道、机器人 - 汇总分享: blog/TG.md
     - Python:
-        - 将Python文件.py打包成.exe可执行程序:
-        - pip:
-    - C语言:
-
+        - 将Python文件.py打包成.exe可执行程序: blog/py/python.md
+        - pip: blog/py/pip.md
+    - C语言: blog/c.md
+    - kexueshangwang: blog/kexue.md
   - 开发:
-    - Markdown:
-    - MWeb Pro:
-    - 大厂们的良心软件～:
-    - 写给所有 Mac 用户的摸鱼指北:
+    - Markdown: develop/markdown.md
+    - MWeb Pro: develop/MWeb.md
+    - 大厂们的良心软件～: develop/fenxiang.md
+    - 写给所有 Mac 用户的摸鱼指北: develop/Mac.md
   - 闲话:
-    - 原神:
+    - 原神: relax/game.md
     - 诗文:
-      - 滕王阁序:
-      - 望江南·超然台作:
-      - 击鼓:
-      - 雨霖铃·秋别:
+      - 滕王阁序: relax/shiwen/twgx.md
+      - 望江南·超然台作: relax/shiwen/sjcnh.md
+      - 击鼓: relax/shiwen/jg.md
+      - 雨霖铃·秋别: relax/shiwen/yll.md
   - 旅行:
-    - 家乡:
-    - 重庆:
+    - 家乡: trip/LH.md
+    - 重庆: trip/travel.md
   - 关于:
-    - 个人履历:
-    - 网站制作:
+    - 个人履历: about/geren.md
+    - 网站制作: about/web.md
 
 
 
