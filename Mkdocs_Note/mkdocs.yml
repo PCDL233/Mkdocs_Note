@@ -45,7 +45,7 @@ repo_name: Wcowin.github.io # 右上角的名字
 # [Navigtion]
 nav:
   - 博客:
-    - 好用/好玩网站分享:
+    - 好用/好玩网站分享: JavaScript学习笔记.md
     - What is Github:
     - 解决谷歌翻译用不了的问题:
     - Mac/windows软件网站汇总:
