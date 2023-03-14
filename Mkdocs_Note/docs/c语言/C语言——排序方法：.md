@@ -16,7 +16,6 @@
 
 ​	两两比较相邻记录的关键字，如果反序则交换，直到没有反序的记录为止。
 
-![冒泡排序](https://img-blog.csdnimg.cn/20210402155752573.gif#pic_center)
 
 
 
@@ -65,9 +64,6 @@ int main()
 ​	通过n-i次关键字间的比较，从**n-i+1**个记录中选出关键字最小的记录，并和第	**i**（1≤i≤n）个记录交换。
 
 
-
-![select](https://img-blog.csdnimg.cn/img_convert/a39c02b57f8c91c353f21035922d3493.gif)
-
 ​	
 
 ```c
@@ -113,11 +109,6 @@ int main()
 ​	直接插入排序就是将一个记录插入到已经排好序的有序表中，从而得到一个新的、记录增加了一个数的有序表。
 
 ​	通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200701163959370.gif)
-
-![img](https://img-blog.csdnimg.cn/4b7dafa386a74908afddc01c71961e89.gif)
-
 ```c
 //插入排序(从小到大) 
 #include<stdio.h>

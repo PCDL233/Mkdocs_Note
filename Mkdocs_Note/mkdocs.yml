@@ -42,40 +42,40 @@ edit_uri: index.md # 编辑按钮跳转的链接
 repo_url: https://github.com/PCDL233/Mkdocs_Note # 右上角点击跳转的链接
 repo_name: Mkdocs_Note.github.io # 右上角的名字
 
-# [Navigtion]
 nav:
   - 学习:
-    - Markdown: JavaScript学习笔记.md
-    - 算法可视化学习网站: 算法可视化网站.md
-    - C语言:
-        -排序方法: c语言/C语言——排序方法：.md
-        -递归: c语言/c语言——递归.md
-        -字符串函数: c语言/C语言字符串函数：.md
-        -穷举法: c语言/枚举法（穷举法）.md
-    -c++:
-      -string: c++/C++ 中string函数用法：.md
-      -c++标准模板(STL): c++/C++ 标准模板库（STL）.md
-    -数据结构:
-      -线性表:
-        -01: 线性表/dataStructure_day01.md
-        -02: 线性表/dataStructure_day02.md
-        -03: 线性表/dataStructure_day03.md
-        -单链表: docs/线性表/单链表.md
-        -顺序表: docs/线性表/顺序表.md
-      -排序算法:
-        -冒泡排序: sortAlgorithm/bubbleSort.md
-        -计数排序: sortAlgorithm/countingSort.md
-        -堆排序: sortAlgorithm/heapSort.md
-        -插入排序: sortAlgorithm/insertionSort.md
-        -归并排序: sortAlgorithm/mergeSort.md
-        -快速排序: sortAlgorithm/quickSort.md
-        -选择排序: sortAlgorithm/selectionSort.md
-        -希尔排序: sortAlgorithm/shellSort.md
+      - Markdown: JavaScript学习笔记.md
+      - 算法可视化学习网站: 算法可视化网站.md
+  - C语言:
+          - 排序方法: c语言/C语言——排序方法：.md
+          - 递归: c语言/c语言——递归.md
+          - 字符串函数: c语言/C语言字符串函数：.md
+          - 穷举法: c语言/枚举法（穷举法）.md
+  - c++:
+          - string: c++/C++ 中string函数用法：.md
+          - c++标准模板(STL): c++/C++ 标准模板库（STL）.md
+  - 数据结构:
+      - 线性表:
+          - 01: 线性表/dataStructure_day01.md
+          - 02: 线性表/dataStructure_day02.md
+          - 03: 线性表/dataStructure_day03.md
+          - 单链表: 线性表/单链表.md
+          - 顺序表: 线性表/顺序表.md
+  - 排序算法:
+      - 冒泡排序: sortAlgorithm/bubbleSort.md
+      - 计数排序: sortAlgorithm/countingSort.md
+      - 堆排序: sortAlgorithm/heapSort.md
+      - 插入排序: sortAlgorithm/insertionSort.md
+      - 归并排序: sortAlgorithm/mergeSort.md
+      - 快速排序: sortAlgorithm/quickSort.md
+      - 选择排序: sortAlgorithm/selectionSort.md
+      - 希尔排序: sortAlgorithm/shellSort.md
   - 旅行:
-    - 家乡: trip/LH.md
-    - 重庆: trip/travel.md
+      - 家乡: trip/LH.md
+      - 重庆: trip/travel.md
   - 关于:
-    - 个人介绍: about/geren.md
+      - 个人介绍: about/geren.md
+
 
 
 
