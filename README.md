@@ -1,6 +1,4 @@
-# Mkdocs_Note
-mkdocs静态网页
-# Welcome to My Wiki个人网站
+# Welcome to My Wiki 个人网站（mkdocs静态网页）
 
 ## 前言
 >本人是一名在读大学，所读专业为计算机。本网页用于记录我的学习笔记，
