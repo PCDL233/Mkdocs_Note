@@ -10,23 +10,27 @@
         <meta name="author" content="CMQ233">
       
       
-        <link rel="canonical" href="https://PCDL233.github.io/Mkdocs_Note/">
+        <link rel="canonical" href="https://PCDL233.github.io/Mkdocs_Note/sortAlgorithm/quickSort/">
       
       
+        <link rel="prev" href="../mergeSort/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      
+        <link rel="next" href="../selectionSort/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>CMQNote</title>
+        <title>快速排序 - CMQNote</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-my-wiki" class="md-skip">
+        <a href="#quick-sort" class="md-skip">
           跳转至
         </a>
       
@@ -89,7 +93,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="CMQNote" class="md-header__button md-logo" aria-label="CMQNote" data-md-component="logo">
+    <a href="../.." title="CMQNote" class="md-header__button md-logo" aria-label="CMQNote" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to My Wiki个人网站
+              快速排序
             
           </span>
         </div>
@@ -206,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-tabs__link">
+      <a href="../../JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-tabs__link">
         学习
       </a>
     </li>
@@ -222,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%EF%BC%9A/" class="md-tabs__link">
+      <a href="../../c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%EF%BC%9A/" class="md-tabs__link">
         C语言
       </a>
     </li>
@@ -238,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="c%2B%2B/C%2B%2B%20%E4%B8%ADstring%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95%EF%BC%9A/" class="md-tabs__link">
+      <a href="../../c%2B%2B/C%2B%2B%20%E4%B8%ADstring%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95%EF%BC%9A/" class="md-tabs__link">
         c++
       </a>
     </li>
@@ -259,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day01/" class="md-tabs__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day01/" class="md-tabs__link">
         数据结构
       </a>
     </li>
@@ -271,13 +275,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="sortAlgorithm/bubbleSort/" class="md-tabs__link">
+      <a href="../bubbleSort/" class="md-tabs__link md-tabs__link--active">
         排序算法
       </a>
     </li>
@@ -293,7 +299,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="trip/LH.md" class="md-tabs__link">
+      <a href="../../trip/LH.md" class="md-tabs__link">
         旅行
       </a>
     </li>
@@ -309,7 +315,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="about/geren.md" class="md-tabs__link">
+      <a href="../../about/geren.md" class="md-tabs__link">
         关于
       </a>
     </li>
@@ -343,7 +349,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CMQNote" class="md-nav__button md-logo" aria-label="CMQNote" data-md-component="logo">
+    <a href="../.." title="CMQNote" class="md-nav__button md-logo" aria-label="CMQNote" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -409,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         Markdown
       </a>
     </li>
@@ -423,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BD%91%E7%AB%99/" class="md-nav__link">
+      <a href="../../%E7%AE%97%E6%B3%95%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BD%91%E7%AB%99/" class="md-nav__link">
         算法可视化学习网站
       </a>
     </li>
@@ -484,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%EF%BC%9A/" class="md-nav__link">
+      <a href="../../c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%EF%BC%9A/" class="md-nav__link">
         排序方法
       </a>
     </li>
@@ -498,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%E8%AF%AD%E8%A8%80/c%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E9%80%92%E5%BD%92/" class="md-nav__link">
+      <a href="../../c%E8%AF%AD%E8%A8%80/c%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E9%80%92%E5%BD%92/" class="md-nav__link">
         递归
       </a>
     </li>
@@ -512,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0%EF%BC%9A/" class="md-nav__link">
+      <a href="../../c%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0%EF%BC%9A/" class="md-nav__link">
         字符串函数
       </a>
     </li>
@@ -526,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%E8%AF%AD%E8%A8%80/%E6%9E%9A%E4%B8%BE%E6%B3%95%EF%BC%88%E7%A9%B7%E4%B8%BE%E6%B3%95%EF%BC%89/" class="md-nav__link">
+      <a href="../../c%E8%AF%AD%E8%A8%80/%E6%9E%9A%E4%B8%BE%E6%B3%95%EF%BC%88%E7%A9%B7%E4%B8%BE%E6%B3%95%EF%BC%89/" class="md-nav__link">
         穷举法
       </a>
     </li>
@@ -583,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%2B%2B/C%2B%2B%20%E4%B8%ADstring%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95%EF%BC%9A/" class="md-nav__link">
+      <a href="../../c%2B%2B/C%2B%2B%20%E4%B8%ADstring%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95%EF%BC%9A/" class="md-nav__link">
         string
       </a>
     </li>
@@ -597,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="c%2B%2B/C%2B%2B%20%E6%A0%87%E5%87%86%E6%A8%A1%E6%9D%BF%E5%BA%93%EF%BC%88STL%EF%BC%89/" class="md-nav__link">
+      <a href="../../c%2B%2B/C%2B%2B%20%E6%A0%87%E5%87%86%E6%A8%A1%E6%9D%BF%E5%BA%93%EF%BC%88STL%EF%BC%89/" class="md-nav__link">
         c++标准模板(STL)
       </a>
     </li>
@@ -693,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day01/" class="md-nav__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day01/" class="md-nav__link">
         1
       </a>
     </li>
@@ -707,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day02/" class="md-nav__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day02/" class="md-nav__link">
         2
       </a>
     </li>
@@ -721,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day03/" class="md-nav__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/dataStructure_day03/" class="md-nav__link">
         3
       </a>
     </li>
@@ -735,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/%E5%8D%95%E9%93%BE%E8%A1%A8/" class="md-nav__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/%E5%8D%95%E9%93%BE%E8%A1%A8/" class="md-nav__link">
         单链表
       </a>
     </li>
@@ -749,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BA%BF%E6%80%A7%E8%A1%A8/%E9%A1%BA%E5%BA%8F%E8%A1%A8/" class="md-nav__link">
+      <a href="../../%E7%BA%BF%E6%80%A7%E8%A1%A8/%E9%A1%BA%E5%BA%8F%E8%A1%A8/" class="md-nav__link">
         顺序表
       </a>
     </li>
@@ -776,16 +782,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
         
@@ -812,7 +818,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           排序算法
@@ -825,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/bubbleSort/" class="md-nav__link">
+      <a href="../bubbleSort/" class="md-nav__link">
         冒泡排序
       </a>
     </li>
@@ -839,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/countingSort/" class="md-nav__link">
+      <a href="../countingSort/" class="md-nav__link">
         计数排序
       </a>
     </li>
@@ -853,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/heapSort/" class="md-nav__link">
+      <a href="../heapSort/" class="md-nav__link">
         堆排序
       </a>
     </li>
@@ -867,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/insertionSort/" class="md-nav__link">
+      <a href="../insertionSort/" class="md-nav__link">
         插入排序
       </a>
     </li>
@@ -881,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/mergeSort/" class="md-nav__link">
+      <a href="../mergeSort/" class="md-nav__link">
         归并排序
       </a>
     </li>
@@ -893,11 +899,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="sortAlgorithm/quickSort/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          快速排序
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         快速排序
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    实现
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -909,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/selectionSort/" class="md-nav__link">
+      <a href="../selectionSort/" class="md-nav__link">
         选择排序
       </a>
     </li>
@@ -923,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sortAlgorithm/shellSort/" class="md-nav__link">
+      <a href="../shellSort/" class="md-nav__link">
         希尔排序
       </a>
     </li>
@@ -980,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="trip/LH.md" class="md-nav__link">
+      <a href="../../trip/LH.md" class="md-nav__link">
         家乡
       </a>
     </li>
@@ -994,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="trip/travel.md" class="md-nav__link">
+      <a href="../../trip/travel.md" class="md-nav__link">
         重庆
       </a>
     </li>
@@ -1049,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/geren.md" class="md-nav__link">
+      <a href="../../about/geren.md" class="md-nav__link">
         个人介绍
       </a>
     </li>
@@ -1091,21 +1145,14 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    前言
+    原理
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    目前的内容
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    批评与指正
+    实现
   </a>
   
 </li>
@@ -1131,36 +1178,100 @@
   
 
 
-<h1 id="welcome-to-my-wiki">Welcome to My Wiki个人网站<a class="headerlink" href="#welcome-to-my-wiki" title="Permanent link">&para;</a></h1>
-<h2 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>本人是一名在读大学，所读专业为计算机。本网页用于记录我的学习笔记，
-包括但不限于前端（HTML CSS JavaScrip）基础、数据结构内容、C语言基础知识
-等。</p>
-</blockquote>
-<h2 id="_2">目前的内容<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="quick-sort">快速排序(Quick Sort)<a class="headerlink" href="#quick-sort" title="Permanent link">&para;</a></h1>
+<p>&emsp;&emsp;快速排序算法的时间复杂度为<span class="arithmatex">\(O(nlogn)\)</span>。但它在时间复杂度为<span class="arithmatex">\(O(nlogn)\)</span>级的几种快速排序算法中，大多数情况下效率更高，所以快速排序的应用非常广泛。</p>
+<h2 id="_1">原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>&emsp;&emsp;快速排序的基本思想是（升序为例）：</p>
 <ul>
-<li><code>Markdown</code> - 关于Markdown语言的学习与使用。</li>
-<li><code>算法可视化</code> - 一个可以让初学者清晰了解算法内部变化实现的网站。</li>
-<li><code>c语言基础</code>   - 编程初学者初期接触的语言。</li>
-<li><code>c++STL模板</code> - 能够高效的参与解决算法竞赛中的难题.</li>
-<li><code>数据结构</code>   -计算机专业大一在读学生的难点。</li>
+<li>从数组中取出一个数，称为基数（pivot）</li>
+<li>遍历数组，将比基数大的数字放到它的右边，比基数小的数字放在它的左边。遍历完成后，数组会被分为左右两个子数组。</li>
+<li>以基数为中心，对其左右两个数组重复上述步骤，直至排序完成。</li>
 </ul>
-<h2 id="_3">批评与指正<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<hr />
-<p><strong>如果这个Wiki网页游行被你浏览，请利用你宝贵的时间提出建议</strong></p>
-<div class="highlight"><pre><span></span><code>具体的参与方式：
-
-1.优先使用Markdown文本：指出原文不足之处，写下您的想法
-
-2.至少用Word文档
-
-3.确保修正内容的完整性及其正确性
-</code></pre></div>
+<p>&emsp;&emsp;动画演示:
+<img alt="" src="../imags/quickSort.gif" /></p>
 <blockquote>
-<p><strong>本人邮箱：2815834616@QQ.com</strong></p>
-<p>感谢您光临我的网站，希望您在这里度过愉快的时光。</p>
+<p>在动画中，黑色标记的元素就是基数，一般我们会从数组的左右两边一起遍历即双指针法，左指针指向遇到的大于基数的值，右指针指向遇到的小于基数的值，然后左右指针的值进行交换即可。</p>
 </blockquote>
+<h2 id="_2">实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>&emsp;&emsp;依据快排思想，我们可以确定要想实现快速排序，需要有一个划分函数<span class="arithmatex">\(partition(arr,start,end)\)</span>。该函数的功能就是将数组<span class="arithmatex">\(arr\)</span>的<span class="arithmatex">\(start\)</span>元素到<span class="arithmatex">\(end\)</span>的元素划分为两个部分，同时返回一个基准位置。以该位置为中心，左边的子数组应该都小于该基准数，右边的子数组，应该都大于该基准数。之后，在对左右两子数组进行进行划分。整个流程就是快速排序。</p>
+<p>&emsp;&emsp;首先实现划分函数<span class="arithmatex">\(partition\)</span>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">partition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[],</span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// 选第一个元素作为基准</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">start</span><span class="p">];</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="c1">// 从第二个元素开始遍历</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">){</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="c1">// 从左边找到大于基准数的值</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">left</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="c1">// 从右边找到小于基准数的值</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">){</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">            </span><span class="c1">// 交换两数</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">            </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">],</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]);</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">            </span><span class="n">left</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">            </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="c1">// 如果出现left == right并且arr[left] &gt; pivot的情况，让right自减</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="c1">// 交换基数与中心轴</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">start</span><span class="p">],</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]);</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="c1">// 返回基准</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">right</span><span class="p">;</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
+</code></pre></div>
+<p>&emsp;&emsp;快速排序就是调用划分函数，排的是基准数，再对基准数左右两边数组调用划分函数，排基准数。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// 快速排序</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">quickSort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[],</span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">pivotIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">partition</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="c1">// 对左右子数组执行快排</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">pivotIndex</span><span class="mi">-1</span><span class="p">);</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">pivotIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">end</span><span class="p">);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</code></pre></div>
+<p>&emsp;&emsp;可以非常清楚，第一次遍历，可以排好1个基准数，第二次遍历，可以排2个基准数，第三次遍历，可以排4个基准数，以此类推。总遍历次数就为<span class="arithmatex">\(logn\)</span> ~ <span class="arithmatex">\(n\)</span>,每次遍历的时间复杂度为<span class="arithmatex">\(O(n)\)</span>。以此，总时间复杂度可以确定为：<span class="arithmatex">\(O(nlogn)\)</span> ~ <span class="arithmatex">\(O(n^2)\)</span>。</p>
+<p><strong>完整代码</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">partition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[],</span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="c1">// 选第一个元素作为基准</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">start</span><span class="p">];</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="c1">// 从第二个元素开始遍历</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">){</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="c1">// 从左边找到大于基准数的值</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">left</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="c1">// 从右边找到小于基准数的值</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">){</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="c1">// 交换两数</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">],</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]);</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="n">left</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">            </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="c1">// 如果出现left == right并且arr[left] &gt; pivot的情况，让right自减</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">right</span><span class="o">--</span><span class="p">;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="c1">// 交换基数与中心轴</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">start</span><span class="p">],</span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]);</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="c1">// 返回基准</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">right</span><span class="p">;</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="p">}</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="c1">// 快速排序</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="kt">void</span><span class="w"> </span><span class="nf">quickSort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[],</span><span class="kt">int</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">start</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">end</span><span class="p">){</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">pivotIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">partition</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">);</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">        </span><span class="c1">// 对左右子数组执行快排</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">        </span><span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">pivotIndex</span><span class="mi">-1</span><span class="p">);</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">        </span><span class="n">quickSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">pivotIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">end</span><span class="p">);</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="p">}</span>
+</code></pre></div>
 
 
 
@@ -1236,14 +1347,14 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "navigation.indexes", "search.share"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "navigation.indexes", "search.share"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="javascripts/extra.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
