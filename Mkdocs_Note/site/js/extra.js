@@ -577,4 +577,3 @@ document.querySelectorAll('.zoom').forEach(item => {
         this.classList.toggle('image-zoom-large');
     })
 });
-

@@ -46,7 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/video.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -65,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
   
     
     
@@ -89,9 +91,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="CMQNote" class="md-header__button md-logo" aria-label="CMQNote" data-md-component="logo">
       
@@ -122,10 +122,10 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
             </label>
           
         
@@ -133,7 +133,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
             </label>
           
         
@@ -195,8 +195,14 @@
     
   </nav>
   
+</header>
     
+    <div class="md-container" data-md-component="container">
       
+      
+        
+          
+            
 <nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -290,48 +296,10 @@
   
 
       
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../trip/LH.md" class="md-tabs__link">
-        旅行
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../about/geren.md" class="md-tabs__link">
-        关于
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -1139,132 +1107,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-      
-      
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          旅行
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          旅行
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../trip/LH.md" class="md-nav__link">
-        家乡
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../trip/travel.md" class="md-nav__link">
-        重庆
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-      
-      
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-          关于
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          关于
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../about/geren.md" class="md-nav__link">
-        个人介绍
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1468,9 +1310,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
-
 
   
   
@@ -1626,75 +1465,118 @@
 </tbody>
 </table>
 <h5 id="constructors"><code>Constructors</code>    构造函数<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code>    vector是由STL提供的一种序列式容器，它的底层其实就是一个**动态数组**。如要使用vector，需要`#include&lt;vector&gt;`。
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    vector是由STL提供的一种序列式容器，它的底层其实就是一个**动态数组**。如要使用vector，需要`#include&lt;vector&gt;`。
+</code></pre></div></td></tr></table></div>
 <p><strong>语法</strong>：vector&lt;元素类型&gt;数据对象名（数据长度，元素初值）</p>
 <p>例：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v1</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="w"> </span><span class="p">);</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">//构造了一个包含5个值为42的元素的Vector</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v1</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="w"> </span><span class="p">);</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">//构造了一个包含5个值为42的元素的Vector</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="assign"><code>assign（）</code>函数<a class="headerlink" href="#assign" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">elem</span><span class="p">)</span><span class="o">-----&gt;</span><span class="c1">//c.assign(n,elem)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">     </span><span class="n">c</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">beg</span><span class="p">,</span><span class="n">end</span><span class="p">)</span><span class="o">------&gt;</span><span class="c1">//将[beg; end)区间中的数据赋值给c。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">assign</span><span class="p">(</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">first</span><span class="p">,</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">last</span><span class="p">);</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">//相当于拷贝函数，将区间[first,last)中的元素赋值到当前的vector容器中</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">void</span><span class="w"> </span><span class="nf">assign</span><span class="p">(</span><span class="n">size_type</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T</span><span class="p">());</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">//赋 n 个值为 x 的元素到 vector 容器中，并且清除掉 vector 容器中以前的内容。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="w">   </span><span class="c1">//输入</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v1</span><span class="p">;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v2</span><span class="p">;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="c1">//assigning</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">v1</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">v2</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">v1</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="c1">//输出</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="c1">//if we print the value</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nl">v1</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nl">v2</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">elem</span><span class="p">)</span><span class="o">-----&gt;</span><span class="c1">//c.assign(n,elem)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">     </span><span class="n">c</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">beg</span><span class="p">,</span><span class="n">end</span><span class="p">)</span><span class="o">------&gt;</span><span class="c1">//将[beg; end)区间中的数据赋值给c。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">assign</span><span class="p">(</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">first</span><span class="p">,</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">last</span><span class="p">);</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1">//相当于拷贝函数，将区间[first,last)中的元素赋值到当前的vector容器中</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kt">void</span><span class="w"> </span><span class="nf">assign</span><span class="p">(</span><span class="n">size_type</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T</span><span class="p">());</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1">//赋 n 个值为 x 的元素到 vector 容器中，并且清除掉 vector 容器中以前的内容。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="w">   </span><span class="c1">//输入</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v1</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v2</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">    </span><span class="c1">//assigning</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="n">v1</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="n">v2</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">v1</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="c1">//输出</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="c1">//if we print the value</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span><span class="nl">v1</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">    </span><span class="nl">v2</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">100</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="at"><code>at（）</code>函数<a class="headerlink" href="#at" title="Permanent link">&para;</a></h5>
 <p>语法：c.at(i)------&gt;传回索引<strong><code>i</code></strong>所指的数据，如果<strong><code>i</code></strong>越界，抛出out_of_range或者<strong>终止程序。</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">{</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">str</span><span class="p">;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">str</span><span class="p">;</span><span class="w">  </span><span class="c1">//str==&quot;12345&quot;</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">ch</span><span class="p">;</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="n">ch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ch</span><span class="p">;</span><span class="w">   </span><span class="c1">//输出ch==&#39;1&#39;;</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="p">{</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">str</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">str</span><span class="p">;</span><span class="w">  </span><span class="c1">//str==&quot;12345&quot;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">ch</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">    </span><span class="n">ch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ch</span><span class="p">;</span><span class="w">   </span><span class="c1">//输出ch==&#39;1&#39;;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="back"><code>back（）</code>函数<a class="headerlink" href="#back" title="Permanent link">&para;</a></h5>
 <p>​       <strong>：</strong>返回当前vector容器中<strong>末尾元素</strong>的引用。</p>
 <p>语法：c.back()------&gt;返回c中最后一个元素，<strong>不检查这个数据是否存在</strong></p>
 <p><strong><code>front（）</code>函数：</strong></p>
 <p>​       返回当前vector<strong>起始元素</strong>的引用</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="o">------&gt;</span><span class="c1">//返回c中初始的元素。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">{</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span><span class="c1">//定义一个空的容器s1；</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">     </span><span class="n">s1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//利用循环将i插入到s1容器中</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="c1">//返回s1容器中的最后的元素和初始元素，输出为3，0；</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">       </span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="o">------&gt;</span><span class="c1">//返回c中初始的元素。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="p">{</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span><span class="c1">//定义一个空的容器s1；</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">     </span><span class="n">s1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//利用循环将i插入到s1容器中</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">    </span><span class="c1">//返回s1容器中的最后的元素和初始元素，输出为3，0；</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">       </span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="begin"><code>begin()</code>函数<a class="headerlink" href="#begin" title="Permanent link">&para;</a></h5>
 <p>​       <strong>：</strong>返回一个指向当前vector(容器)起始元素的<strong>迭代器</strong>（<code>iterator</code>）</p>
 <h5 id="end"><code>end</code>函数<a class="headerlink" href="#end" title="Permanent link">&para;</a></h5>
@@ -1703,278 +1585,497 @@
 <p>​           <strong>：</strong>返回指向当前vector<strong>末尾</strong>位置的<strong>逆</strong>迭代器，与<strong><a href="">end()函数</a></strong>相似。</p>
 <h5 id="rend"><strong><code>rend()</code></strong>函数<a class="headerlink" href="#rend" title="Permanent link">&para;</a></h5>
 <p>​           <strong>：</strong>返回指向当前vector<strong>起始</strong>位置的<strong>逆</strong>迭代器,与<strong><a href="">begin()函数</a></strong>相似</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">{</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">56</span><span class="p">);</span><span class="c1">//定义一个存放2个&quot;56&quot;的容器s1;</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="p">;</span><span class="c1">//定义一个迭代器it</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="c1">//用迭代it来接收容器中第一个元素的地址</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">it</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">it</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">it</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器it从s1中的第一个元素开始</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">it</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用it的值；</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="p">{</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">56</span><span class="p">);</span><span class="c1">//定义一个存放2个&quot;56&quot;的容器s1;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="p">;</span><span class="c1">//定义一个迭代器it</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">    </span><span class="c1">//用迭代it来接收容器中第一个元素的地址</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">it</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">it</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">it</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器it从s1中的第一个元素开始</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">it</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用it的值；</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="capacity"><code>capacity（）</code>函数<a class="headerlink" href="#capacity" title="Permanent link">&para;</a></h5>
 <p>​       指容器在<strong>分配新的存储空间之前</strong>能存储的<strong>元素总数</strong>。capacity（）是容器可存储的最大总数，size（）是当前容器存储的个数（<strong><em>即容器实际存储的元素的个数</em></strong>）。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">{</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w">  </span><span class="c1">//此时没有初始化，所以size()和capacity()都是0；</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="c1">//此时容器内有一个元素了，那么size()和capacity()都是1</span>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="c1">//此时容器内能够提供的空间capacity()不够用了，需要申请内容，申请多少呢，申请后的大小应该是以前的2倍，那就应该是2了，此时有两个元素，size（）为2，capacity（）也是2</span>
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="c1">//此时容器能够提供的空间是2，又增加元素，不够，需要申请空间，申请后的空间为原来2倍，就是4了，那么size()为3，capacity（）为4</span>
-<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">    </span><span class="c1">//容器还能够提供一个空间，不需要申请新空间，size()为4，capacity（）为4</span>
-<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">    </span><span class="c1">//空间不够，需要申请，size()为5，capacity为8</span>
-<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="p">}</span>
-<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>
-<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="c1">//输出为：</span>
-<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">1</span>
-<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">2</span>
-<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="n">size</span><span class="o">=</span><span class="mi">3</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">4</span>
-<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="n">size</span><span class="o">=</span><span class="mi">4</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">4</span>
-<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="n">size</span><span class="o">=</span><span class="mi">5</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">8</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span>
+<span class="normal"><a href="#__codelineno-8-18">18</a></span>
+<span class="normal"><a href="#__codelineno-8-19">19</a></span>
+<span class="normal"><a href="#__codelineno-8-20">20</a></span>
+<span class="normal"><a href="#__codelineno-8-21">21</a></span>
+<span class="normal"><a href="#__codelineno-8-22">22</a></span>
+<span class="normal"><a href="#__codelineno-8-23">23</a></span>
+<span class="normal"><a href="#__codelineno-8-24">24</a></span>
+<span class="normal"><a href="#__codelineno-8-25">25</a></span>
+<span class="normal"><a href="#__codelineno-8-26">26</a></span>
+<span class="normal"><a href="#__codelineno-8-27">27</a></span>
+<span class="normal"><a href="#__codelineno-8-28">28</a></span>
+<span class="normal"><a href="#__codelineno-8-29">29</a></span>
+<span class="normal"><a href="#__codelineno-8-30">30</a></span>
+<span class="normal"><a href="#__codelineno-8-31">31</a></span>
+<span class="normal"><a href="#__codelineno-8-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="p">{</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">  </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w">  </span><span class="c1">//此时没有初始化，所以size()和capacity()都是0；</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="w">    </span><span class="c1">//此时容器内有一个元素了，那么size()和capacity()都是1</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="w">    </span><span class="c1">//此时容器内能够提供的空间capacity()不够用了，需要申请内容，申请多少呢，申请后的大小应该是以前的2倍，那就应该是2了，此时有两个元素，size（）为2，capacity（）也是2</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a><span class="w">    </span><span class="c1">//此时容器能够提供的空间是2，又增加元素，不够，需要申请空间，申请后的空间为原来2倍，就是4了，那么size()为3，capacity（）为4</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a><span class="w">    </span><span class="c1">//容器还能够提供一个空间，不需要申请新空间，size()为4，capacity（）为4</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21"></a><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22"></a><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; capacity=&quot;</span><span class="o">&lt;&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23"></a><span class="w">    </span><span class="c1">//空间不够，需要申请，size()为5，capacity为8</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25"></a><span class="p">}</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26"></a>
+<a id="__codelineno-8-27" name="__codelineno-8-27"></a><span class="c1">//输出为：</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28"></a><span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">1</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29"></a><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">2</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30"></a><span class="n">size</span><span class="o">=</span><span class="mi">3</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">4</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31"></a><span class="n">size</span><span class="o">=</span><span class="mi">4</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">4</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32"></a><span class="n">size</span><span class="o">=</span><span class="mi">5</span><span class="w"> </span><span class="n">capacity</span><span class="o">=</span><span class="mi">8</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="clear"><strong><code>clear()</code>函数</strong><a class="headerlink" href="#clear" title="Permanent link">&para;</a></h5>
 <p>​       删除当前vector中的所有元素。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="w"> </span><span class="n">clear</span><span class="p">();</span><span class="o">-----&gt;</span><span class="c1">//移除容器c中所有的元素。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">{</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">6</span><span class="p">);</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="p">;</span><span class="c1">//定义迭代器it和mi</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">mi</span><span class="p">;</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">it</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">it</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">it</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器it从s1中的第一个元素开始</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">it</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用it的值；</span>
-<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">     </span><span class="p">}</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">    </span><span class="n">s1</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="c1">//清除后s1容器为空。</span>
-<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">     </span><span class="k">for</span><span class="p">(</span><span class="n">mi</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">mi</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">mi</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器mi从s1中的第一个元素开始</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">mi</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用mi的值；</span>
-<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="w">     </span><span class="p">}</span>
-<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">语法</span><span class="err">：</span><span class="n">c</span><span class="p">.</span><span class="w"> </span><span class="n">clear</span><span class="p">();</span><span class="o">-----&gt;</span><span class="c1">//移除容器c中所有的元素。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span>
+<span class="normal"><a href="#__codelineno-10-19">19</a></span>
+<span class="normal"><a href="#__codelineno-10-20">20</a></span>
+<span class="normal"><a href="#__codelineno-10-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="p">{</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">6</span><span class="p">);</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="p">;</span><span class="c1">//定义迭代器it和mi</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">mi</span><span class="p">;</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">it</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">it</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">it</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器it从s1中的第一个元素开始</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">it</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用it的值；</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">     </span><span class="p">}</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">    </span><span class="n">s1</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="c1">//清除后s1容器为空。</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">     </span><span class="k">for</span><span class="p">(</span><span class="n">mi</span><span class="o">=</span><span class="n">s1</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="n">mi</span><span class="o">!=</span><span class="n">s1</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="n">mi</span><span class="o">++</span><span class="p">)</span><span class="c1">//利用迭代器mi从s1中的第一个元素开始</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">mi</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出解引用mi的值；</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="w">     </span><span class="p">}</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <p><img alt="" src="C:\Users\CMQ233\Pictures\竞赛刷题\屏幕截图 2022-11-17 160016.png" /></p>
 <p><img alt="" src="C:\Users\CMQ233\Pictures\竞赛刷题\屏幕截图 2022-11-17 160156.png" /></p>
 <h5 id="empty"><code>empty()</code>函数<a class="headerlink" href="#empty" title="Permanent link">&para;</a></h5>
 <p>​       用来测试变量是否已经配置。若变量已存在、<strong>非空</strong>字符串或者非零，则返回 <strong>false</strong> 值；反之返回 <strong>true</strong>值。所以，当字符串的值为0时，也返回true，就是执行empty内部的语句。</p>
 <p>即：<strong>验证当前这个容器是否已经赋值（已经有元素在里面）</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">{</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">s1</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;s1=&quot;</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="c1">//输出：s1=1，没有容纳任何元素返回1-----&gt;为真</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">     </span><span class="n">s</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">s2</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;s2=&quot;</span><span class="o">&lt;&lt;</span><span class="n">s2</span><span class="p">;</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="c1">//输出：s2=0，有元素了，返回值为0----&gt;为假</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="p">{</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">s1</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;s1=&quot;</span><span class="o">&lt;&lt;</span><span class="n">s1</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="w">    </span><span class="c1">//输出：s1=1，没有容纳任何元素返回1-----&gt;为真</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">     </span><span class="n">s</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">s2</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;s2=&quot;</span><span class="o">&lt;&lt;</span><span class="n">s2</span><span class="p">;</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w">    </span><span class="c1">//输出：s2=0，有元素了，返回值为0----&gt;为假</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <p><strong>可做为循环的条件执行：</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">while</span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="n">v</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span><span class="w"> </span><span class="p">)</span><span class="o">------&gt;</span><span class="c1">//作为循环执行的判断条件</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p">{</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">   </span><span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">while</span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="n">v</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span><span class="w"> </span><span class="p">)</span><span class="o">------&gt;</span><span class="c1">//作为循环执行的判断条件</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="p">{</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">   </span><span class="n">v</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w"> </span><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="erase"><code>erase()函数</code><a class="headerlink" href="#erase" title="Permanent link">&para;</a></h5>
 <p>​       <strong>：</strong>要么删作<strong>指定位置loc的元素</strong>,要么删除<strong>区间[start, end)</strong>的所有元素。返回值是指向删除的最后一个元素的下一位置的迭代器(<strong>即下一个数据的<code>位置</code></strong>）。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">c</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span><span class="o">----&gt;</span><span class="c1">//删除pos位置的数据，传回下一个数据的位置。</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">c</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">beg</span><span class="p">,</span><span class="n">end</span><span class="p">)</span><span class="o">----&gt;</span><span class="c1">//删除[beg,end)区间的数据，传回下一个数据的位置。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="p">{</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;abcdef&quot;</span><span class="p">};</span>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
-<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="c1">//输出：abcef，将字符&#39;d&#39;删除；</span>
-<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出：abc，将字符串中区间[3,6)的字符删除；</span>
-<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="n">c</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span><span class="o">----&gt;</span><span class="c1">//删除pos位置的数据，传回下一个数据的位置。</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="n">c</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">beg</span><span class="p">,</span><span class="n">end</span><span class="p">)</span><span class="o">----&gt;</span><span class="c1">//删除[beg,end)区间的数据，传回下一个数据的位置。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-14-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-14-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-14-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-14-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-14-10">10</a></span>
+<span class="normal"><a href="#__codelineno-14-11">11</a></span>
+<span class="normal"><a href="#__codelineno-14-12">12</a></span>
+<span class="normal"><a href="#__codelineno-14-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="p">{</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;abcdef&quot;</span><span class="p">};</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="c1">//输出：abcef，将字符&#39;d&#39;删除；</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出：abc，将字符串中区间[3,6)的字符删除；</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="pop_back"><code>pop_back()</code>函数<a class="headerlink" href="#pop_back" title="Permanent link">&para;</a></h5>
 <p>​           <strong>：</strong>删除当前容器中（vector)<strong>最后</strong>的一个元素。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">语法</span><span class="err">：</span><span class="kt">void</span><span class="w"> </span><span class="n">pop_back</span><span class="p">();</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">     </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">     </span><span class="n">c</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="o">-----&gt;</span><span class="c1">//删除容器c中最后的元素。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">{</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
-<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">b</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：0 1 2 3 4 5 6 7 8 9</span>
-<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="c1">//删除容器s中最后一个元素&#39;9&#39;。</span>
-<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>
-<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：0 1 2 3 4 5 6 7 8</span>
-<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="w">     </span><span class="p">}</span>
-<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a>
-<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a>
-<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="n">语法</span><span class="err">：</span><span class="kt">void</span><span class="w"> </span><span class="n">pop_back</span><span class="p">();</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">     </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">     </span><span class="n">c</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="o">-----&gt;</span><span class="c1">//删除容器c中最后的元素。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-16-10">10</a></span>
+<span class="normal"><a href="#__codelineno-16-11">11</a></span>
+<span class="normal"><a href="#__codelineno-16-12">12</a></span>
+<span class="normal"><a href="#__codelineno-16-13">13</a></span>
+<span class="normal"><a href="#__codelineno-16-14">14</a></span>
+<span class="normal"><a href="#__codelineno-16-15">15</a></span>
+<span class="normal"><a href="#__codelineno-16-16">16</a></span>
+<span class="normal"><a href="#__codelineno-16-17">17</a></span>
+<span class="normal"><a href="#__codelineno-16-18">18</a></span>
+<span class="normal"><a href="#__codelineno-16-19">19</a></span>
+<span class="normal"><a href="#__codelineno-16-20">20</a></span>
+<span class="normal"><a href="#__codelineno-16-21">21</a></span>
+<span class="normal"><a href="#__codelineno-16-22">22</a></span>
+<span class="normal"><a href="#__codelineno-16-23">23</a></span>
+<span class="normal"><a href="#__codelineno-16-24">24</a></span>
+<span class="normal"><a href="#__codelineno-16-25">25</a></span>
+<span class="normal"><a href="#__codelineno-16-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="p">{</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">b</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：0 1 2 3 4 5 6 7 8 9</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="c1">//删除容器s中最后一个元素&#39;9&#39;。</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18"></a>
+<a id="__codelineno-16-19" name="__codelineno-16-19"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：0 1 2 3 4 5 6 7 8</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23"></a><span class="w">     </span><span class="p">}</span>
+<a id="__codelineno-16-24" name="__codelineno-16-24"></a>
+<a id="__codelineno-16-25" name="__codelineno-16-25"></a>
+<a id="__codelineno-16-26" name="__codelineno-16-26"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="push_back"><code>push_back()函数</code><a class="headerlink" href="#push_back" title="Permanent link">&para;</a></h5>
 <p>​           ：添加元素到当前容器（vector）<strong>末尾</strong>，（插入元素到容器中）；</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="p">{</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span>
-<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="sc">&#39;a&#39;</span><span class="o">+</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">        </span><span class="n">s1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//从i=&#39;a&#39;开始的字符插入s1中</span>
-<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s2</span><span class="p">;</span>
-<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">        </span><span class="n">s2</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//将i的值插入容器s2中</span>
-<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>
-<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s1=&quot;</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出：s1=abcdefghij</span>
-<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>
-<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>
-<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s2=&quot;</span><span class="p">;</span>
-<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w">        </span><span class="n">cout</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：s2=0 1 2 3 4 5 6 7 8 9</span>
-<a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span>
+<span class="normal"><a href="#__codelineno-17-17">17</a></span>
+<span class="normal"><a href="#__codelineno-17-18">18</a></span>
+<span class="normal"><a href="#__codelineno-17-19">19</a></span>
+<span class="normal"><a href="#__codelineno-17-20">20</a></span>
+<span class="normal"><a href="#__codelineno-17-21">21</a></span>
+<span class="normal"><a href="#__codelineno-17-22">22</a></span>
+<span class="normal"><a href="#__codelineno-17-23">23</a></span>
+<span class="normal"><a href="#__codelineno-17-24">24</a></span>
+<span class="normal"><a href="#__codelineno-17-25">25</a></span>
+<span class="normal"><a href="#__codelineno-17-26">26</a></span>
+<span class="normal"><a href="#__codelineno-17-27">27</a></span>
+<span class="normal"><a href="#__codelineno-17-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="cp">#include</span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="p">{</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="sc">&#39;a&#39;</span><span class="o">+</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="w">        </span><span class="n">s1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//从i=&#39;a&#39;开始的字符插入s1中</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s2</span><span class="p">;</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="w">        </span><span class="n">s2</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//将i的值插入容器s2中</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17"></a>
+<a id="__codelineno-17-18" name="__codelineno-17-18"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s1=&quot;</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出：s1=abcdefghij</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19"></a>
+<a id="__codelineno-17-20" name="__codelineno-17-20"></a>
+<a id="__codelineno-17-21" name="__codelineno-17-21"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s2=&quot;</span><span class="p">;</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">a</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-17-24" name="__codelineno-17-24"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-17-25" name="__codelineno-17-25"></a><span class="w">        </span><span class="n">cout</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="c1">//输出：s2=0 1 2 3 4 5 6 7 8 9</span>
+<a id="__codelineno-17-26" name="__codelineno-17-26"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-27" name="__codelineno-17-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-17-28" name="__codelineno-17-28"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="reserve"><strong><code>reserve()</code>函数</strong><a class="headerlink" href="#reserve" title="Permanent link">&para;</a></h5>
 <p>​           ：为当前vector预留至少共容纳size个元素的空间.(译注:实际空间可能大于size)。<strong>调整vector大小</strong>，使之可以容纳n个元素，如果当前vector容量小于n，则扩展容量至n，其他情况则不进行存储重新分配，对容量没有影响。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="p">{</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="kt">int</span><span class="w">  </span><span class="n">s1</span><span class="p">;</span>
-<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a1</span><span class="p">;</span>
-<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span><span class="c1">//定义是s1存储容器a1的最大存储数</span>
-<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;a1:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span>
-<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">        </span><span class="n">a1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//向容器中插入i的值</span>
-<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">())</span><span class="w"> </span>
-<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">            </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span>
-<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;capacity changed: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
-<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="w">            </span><span class="c1">//输出容器最大存储数的变化：1，2，3，4，6，9，13，19......</span>
-<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="w">            </span><span class="c1">//容器中的最大存储数随着元素的增加而增加</span>
-<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>
-<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a2</span><span class="p">;</span>
-<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="w">    </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span><span class="c1">//将容器a1的最大存储数赋值给s1。</span>
-<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a><span class="w">    </span><span class="n">a2</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w">   </span><span class="c1">// 直接调整容器bar的空间为100。</span>
-<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="s">&quot;a2:&quot;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span>
-<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="w">        </span><span class="n">a2</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">())</span><span class="w"> </span>
-<a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a><span class="w">            </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span>
-<a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;capacity changed: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
-<a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a><span class="w">            </span><span class="c1">//容器足够存储增加的值，所以输出的值不会改变；输出为：500。</span>
-<a id="__codelineno-18-34" name="__codelineno-18-34" href="#__codelineno-18-34"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-18-35" name="__codelineno-18-35" href="#__codelineno-18-35"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-18-36" name="__codelineno-18-36" href="#__codelineno-18-36"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-18-37" name="__codelineno-18-37" href="#__codelineno-18-37"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span>
+<span class="normal"><a href="#__codelineno-18-20">20</a></span>
+<span class="normal"><a href="#__codelineno-18-21">21</a></span>
+<span class="normal"><a href="#__codelineno-18-22">22</a></span>
+<span class="normal"><a href="#__codelineno-18-23">23</a></span>
+<span class="normal"><a href="#__codelineno-18-24">24</a></span>
+<span class="normal"><a href="#__codelineno-18-25">25</a></span>
+<span class="normal"><a href="#__codelineno-18-26">26</a></span>
+<span class="normal"><a href="#__codelineno-18-27">27</a></span>
+<span class="normal"><a href="#__codelineno-18-28">28</a></span>
+<span class="normal"><a href="#__codelineno-18-29">29</a></span>
+<span class="normal"><a href="#__codelineno-18-30">30</a></span>
+<span class="normal"><a href="#__codelineno-18-31">31</a></span>
+<span class="normal"><a href="#__codelineno-18-32">32</a></span>
+<span class="normal"><a href="#__codelineno-18-33">33</a></span>
+<span class="normal"><a href="#__codelineno-18-34">34</a></span>
+<span class="normal"><a href="#__codelineno-18-35">35</a></span>
+<span class="normal"><a href="#__codelineno-18-36">36</a></span>
+<span class="normal"><a href="#__codelineno-18-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="p">{</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="w">    </span><span class="kt">int</span><span class="w">  </span><span class="n">s1</span><span class="p">;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a1</span><span class="p">;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a><span class="w">    </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span><span class="c1">//定义是s1存储容器a1的最大存储数</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;a1:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="w">        </span><span class="n">a1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="c1">//向容器中插入i的值</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">())</span><span class="w"> </span>
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a><span class="w">            </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;capacity changed: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-18-17" name="__codelineno-18-17"></a><span class="w">            </span><span class="c1">//输出容器最大存储数的变化：1，2，3，4，6，9，13，19......</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18"></a><span class="w">            </span><span class="c1">//容器中的最大存储数随着元素的增加而增加</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21"></a>
+<a id="__codelineno-18-22" name="__codelineno-18-22"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a2</span><span class="p">;</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23"></a><span class="w">    </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span><span class="c1">//将容器a1的最大存储数赋值给s1。</span>
+<a id="__codelineno-18-24" name="__codelineno-18-24"></a><span class="w">    </span><span class="n">a2</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w">   </span><span class="c1">// 直接调整容器bar的空间为100。</span>
+<a id="__codelineno-18-25" name="__codelineno-18-25"></a><span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="s">&quot;a2:&quot;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-18-27" name="__codelineno-18-27"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-18-28" name="__codelineno-18-28"></a><span class="w">        </span><span class="n">a2</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-18-29" name="__codelineno-18-29"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">())</span><span class="w"> </span>
+<a id="__codelineno-18-30" name="__codelineno-18-30"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-18-31" name="__codelineno-18-31"></a><span class="w">            </span><span class="n">s1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a2</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span>
+<a id="__codelineno-18-32" name="__codelineno-18-32"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;capacity changed: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-18-33" name="__codelineno-18-33"></a><span class="w">            </span><span class="c1">//容器足够存储增加的值，所以输出的值不会改变；输出为：500。</span>
+<a id="__codelineno-18-34" name="__codelineno-18-34"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-18-35" name="__codelineno-18-35"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-18-36" name="__codelineno-18-36"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-18-37" name="__codelineno-18-37"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="resize"><strong><code>resize()</code></strong>函数<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h5>
 <p>​       </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">c</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">改变c容器的存储大小为num</span><span class="p">(</span><span class="n">数字</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="p">{</span>
-<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
-<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size of:&quot;</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出=size of:10</span>
-<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
-<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">//重新调整容器s的size为100；</span>
-<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">   </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;changed size of:&quot;</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出=changed size of:100</span>
-<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="n">c</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">改变c容器的存储大小为num</span><span class="p">(</span><span class="n">数字</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-20-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-20-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-20-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-20-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-20-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-20-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-20-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-20-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-20-10">10</a></span>
+<span class="normal"><a href="#__codelineno-20-11">11</a></span>
+<span class="normal"><a href="#__codelineno-20-12">12</a></span>
+<span class="normal"><a href="#__codelineno-20-13">13</a></span>
+<span class="normal"><a href="#__codelineno-20-14">14</a></span>
+<span class="normal"><a href="#__codelineno-20-15">15</a></span>
+<span class="normal"><a href="#__codelineno-20-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="p">{</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9"></a><span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;size of:&quot;</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出=size of:10</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12"></a>
+<a id="__codelineno-20-13" name="__codelineno-20-13"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">//重新调整容器s的size为100；</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14"></a><span class="w">   </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;changed size of:&quot;</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出=changed size of:100</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h5 id="swap"><code>swap()</code>函数<a class="headerlink" href="#swap" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">c1</span><span class="p">.</span><span class="n">swap</span><span class="p">(</span><span class="n">c2</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">将c1和c2元素互换</span><span class="err">。</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">swap</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">将c1和c2元素互换</span><span class="err">。</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="p">{</span>
-<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span>
-<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">    </span><span class="n">s1</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">);</span>
-<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s2</span><span class="p">;</span>
-<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">    </span><span class="n">s2</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
-<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s1=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s2=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span>
-<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;changed s1=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;changed s2=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="w">    </span><span class="c1">//输出：s1=500s2=100</span>
-<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="w">        </span><span class="c1">//changed s1=100changed s2=500</span>
-<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="n">c1</span><span class="p">.</span><span class="n">swap</span><span class="p">(</span><span class="n">c2</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">将c1和c2元素互换</span><span class="err">。</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="n">swap</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">)</span><span class="o">-----&gt;</span><span class="n">将c1和c2元素互换</span><span class="err">。</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-22-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-22-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-22-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-22-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-22-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-22-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-22-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-22-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-22-10">10</a></span>
+<span class="normal"><a href="#__codelineno-22-11">11</a></span>
+<span class="normal"><a href="#__codelineno-22-12">12</a></span>
+<span class="normal"><a href="#__codelineno-22-13">13</a></span>
+<span class="normal"><a href="#__codelineno-22-14">14</a></span>
+<span class="normal"><a href="#__codelineno-22-15">15</a></span>
+<span class="normal"><a href="#__codelineno-22-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="p">{</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s1</span><span class="p">;</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7"></a><span class="w">    </span><span class="n">s1</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">);</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">s2</span><span class="p">;</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9"></a><span class="w">    </span><span class="n">s2</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s1=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;s2=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11"></a><span class="w">    </span><span class="n">swap</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">);</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;changed s1=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;changed s2=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14"></a><span class="w">    </span><span class="c1">//输出：s1=500s2=100</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15"></a><span class="w">        </span><span class="c1">//changed s1=100changed s2=500</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -1986,11 +2087,6 @@
           
           
         </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            回到页面顶部
-          </a>
         
       </main>
       
@@ -2050,14 +2146,14 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "navigation.indexes", "search.share"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "announce.dismiss", "navigation.tracking", "navigation.tabs", "search.suggest", "search.highlight", "navigation.expand", "navigation.indexes", "search.share"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
-        <script src="../../javascripts/extra.js"></script>
+        <script src="../../js/extra.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
