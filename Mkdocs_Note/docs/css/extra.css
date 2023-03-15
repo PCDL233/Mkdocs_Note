@@ -1,7 +1,7 @@
 :root > * {
-    --md-primary-fg-color:        #4b78d8;
-    --md-primary-fg-color--light: #4b78d8;
-    --md-primary-fg-color--dark:  #4b78d8;
+    --md-primary-fg-color: #244389;
+    --md-primary-fg-color--light: #49b1f5;
+    --md-primary-fg-color--dark:  #49b1f5;
     /* background: rgb(187, 218, 251); */
     
 
@@ -71,7 +71,7 @@ img {
 
 /* 滚动条 */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   height: 8px;
 }
 

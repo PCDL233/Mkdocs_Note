@@ -9,25 +9,25 @@ theme:
     #primary: blue grey
 
     - scheme: default # 白天模式
-      primary: blue # 上方的
-      accent: deep orange # 链接等可交互元件的高亮色
+      primary: light blue # 上方的
+      accent: light blue # 链接等可交互元件的高亮色
       toggle:
-        icon: material/weather-night # 图标
+        icon: material/brightness-7 # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - scheme: slate # 夜晚模式
       primary: black
       accent: cyan
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: 切换至日间模式
   features:
     - navigation.instant #- header.autohide  #自动隐藏
-    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-    - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
-    - navigation.top # 返回顶部的按钮 在上滑时出现
+    #- navigation.top # 返回顶部的按钮 在上滑时出现
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - navigation.expand # 打开Tab时左侧目录全部展开
@@ -70,11 +70,6 @@ nav:
       - 快速排序: sortAlgorithm/quickSort.md
       - 选择排序: sortAlgorithm/selectionSort.md
       - 希尔排序: sortAlgorithm/shellSort.md
-  - 旅行:
-      - 家乡: trip/LH.md
-      - 重庆: trip/travel.md
-  - 关于:
-      - 个人介绍: about/geren.md
 
 
 
@@ -94,7 +89,6 @@ extra:
 
 plugins:
   - search
-  - tags  #标签
 markdown_extensions:
   - abbr
   - pymdownx.caret
@@ -107,7 +101,7 @@ markdown_extensions:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
-      # linenums: true # 显示行号
+      linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -120,11 +114,14 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
 
 extra_javascript:
-  - javascripts/extra.js
-  - javascripts/mathjax.js
+  - js/extra.js
+  - js/mathjax.js
+  #- js/backgroud.js
+  #- js/shortcuts.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
-  - stylesheets/extra.css
+  - css/extra.css
+  - css/video.css
 
 
