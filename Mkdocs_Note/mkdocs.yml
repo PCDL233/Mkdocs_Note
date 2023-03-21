@@ -55,13 +55,16 @@ nav:
   - c++:
           - string: c++/C++ 中string函数用法：.md
           - c++标准模板(STL): c++/C++ 标准模板库（STL）.md
-  - 数据结构:
+  - 数据结构学习:
       - 线性表:
           - 01: 线性表/dataStructure_day01.md
           - 02: 线性表/dataStructure_day02.md
           - 03: 线性表/dataStructure_day03.md
           - 单链表: 线性表/单链表.md
           - 顺序表: 线性表/顺序表.md
+      - 数据结构代码实现:
+          -01: 数据结构学习/Algorithm.md
+          -02: 数据结构学习/DataStructure.md
   - 数据结构实验:
       - 顺序表:
           - 学生通讯录: 数据结构实验/数据实验_学生通讯录顺序表.md
