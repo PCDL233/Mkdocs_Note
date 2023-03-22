@@ -66,8 +66,8 @@ nav:
           -01: 数据结构学习/Algorithm.md
           -02: 数据结构学习/DataStructure.md
   - 数据结构实验:
-      - 顺序表:
-          - 学生通讯录: 数据结构实验/数据实验_学生通讯录顺序表.md
+      - 顺序表: 数据结构实验/学生通讯录(顺序表).md
+      - 链表: 数据结构实验/学生通讯录(单链表).md
   - 排序算法:
       - 冒泡排序: sortAlgorithm/bubbleSort.md
       - 计数排序: sortAlgorithm/countingSort.md
