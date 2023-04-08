@@ -44,7 +44,8 @@ repo_name: Mkdocs_Note.github.io # 右上角的名字
 
 nav:
   - 学习:
-      - JavaScript: JavaScript学习笔记.md
+      - JavaScript:
+         - JavaScript学习笔记: JavaScript/JavaScript学习笔记.md
     #- markdown:
       - 算法可视化学习网站: 算法可视化网站.md
   - C语言:
