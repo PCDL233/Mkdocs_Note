@@ -1,5 +1,7 @@
 # Welcome to My Wiki （mkdocs静态网页）
 
+WiKi address：https://PCDL233.github.io/Mkdocs_Note/
+
 ## 前言
 >本人是一名在读大学生，所读专业为计算机。本网页用于记录我的学习笔记，
 > 包括但不限于前端（HTML CSS JavaScrip）基础、数据结构内容、C语言基础知识
@@ -25,5 +27,5 @@
 
     3.确保修正内容的完整性及其正确性
 >**本人邮箱：2815834616@QQ.com**
-        
+
         
