@@ -45,46 +45,74 @@ repo_name: Mkdocs_Note.github.io # 右上角的名字
 nav:
   - 学习:
       - JavaScript:
-         - JavaScript学习笔记: JavaScript/JavaScript学习笔记.md
+         - JavaScript学习笔记: file/JavaScript/JavaScript学习笔记.md
     #- markdown:
       - 算法可视化学习网站: 算法可视化网站.md
   - C语言:
-          - 排序方法: c语言/C语言——排序方法：.md
-          - 递归: c语言/c语言——递归.md
-          - 字符串函数: c语言/C语言字符串函数：.md
-          - 穷举法: c语言/枚举法（穷举法）.md
+          - 排序方法: file/C_C++/c语言/C语言——排序方法：.md
+          - 递归: file/C_C++/c语言/c语言——递归.md
+          - 字符串函数: file/C_C++/c语言/C语言字符串函数：.md
+          - 穷举法: file/C_C++/c语言/枚举法（穷举法）.md
   - c++:
-          - string: c++/C++ 中string函数用法：.md
-          - c++标准模板(STL): c++/C++ 标准模板库（STL）.md
+          - string: file/C_C++/c++/C++ 中string函数用法：.md
+          - c++标准模板(STL): file/C_C++/c++/C++ 标准模板库（STL）.md
+  - python:
+          - 01-变量和数据类型: file/Python_Study/Python学习-黑马程序/01-变量和数据类型.md
+          - 02-字符串格式化: file/Python_Study/Python学习-黑马程序/02-字符串格式化.md
+          - 03-数据输入: file/Python_Study/Python学习-黑马程序/03-数据输入.md
+          - 04-布尔类型: file/Python_Study/Python学习-黑马程序/04-布尔类型.md
+          - 05-分支结构: file/Python_Study/Python学习-黑马程序/05-分支结构.md
+          - 06-循环结构: file/Python_Study/Python学习-黑马程序/06-循环结构.md
+          - 07-函数: file/Python_Study/Python学习-黑马程序/07-函数.md
+          - 08-函数案例: file/Python_Study/Python学习-黑马程序/08-函数案例.md
+          - 09-数据容器: file/Python_Study/Python学习-黑马程序/09-数据容器.md
+          - 10-列表(list): file/Python_Study/Python学习-黑马程序/10-列表(list).md
+          - 11-元组(tuple): file/Python_Study/Python学习-黑马程序/11-元组(tuple).md
+          - 12-字符串: file/Python_Study/Python学习-黑马程序/12-字符串.md
+          - 13-序列、切片: file/Python_Study/Python学习-黑马程序/13-序列、切片.md
+          - 14-集合(set): file/Python_Study/Python学习-黑马程序/14-集合(set).md
+          - 15-字典(dict): file/Python_Study/Python学习-黑马程序/15-字典(dict).md
+          - 16-数据容器的通用操作: file/Python_Study/Python学习-黑马程序/16-数据容器的通用操作.md
+          - 17-函数的参数类型: file/Python_Study/Python学习-黑马程序/17-函数的参数类型.md
+          - 18-匿名函数: file/Python_Study/Python学习-黑马程序/18-匿名函数.md
+          - 19-python文件操作: file/Python_Study/Python学习-黑马程序/19-python文件操作.md
+          - 20-python异常、模块与包: file/Python_Study/Python学习-黑马程序/20-python异常、模块与包.md
+          - 21-面向对象: file/Python_Study/Python学习-黑马程序/21-面向对象.md
+          - 22-类的成员方法: file/Python_Study/Python学习-黑马程序/22-类的成员方法.md
+          - 23-类和对象: file/Python_Study/Python学习-黑马程序/23-类和对象.md
+          - 24-构造方法: file/Python_Study/Python学习-黑马程序/24-构造方法.md
+          - 25-其他内置方法: file/Python_Study/Python学习-黑马程序/25-其他内置方法.md
+          - 26-面向对象3大特性: file/Python_Study/Python学习-黑马程序/26-面向对象3大特性.md
+          - 27-类型注解: file/Python_Study/Python学习-黑马程序/27-类型注解.md
   - 数据结构学习:
       - 线性表:
-          - 01: 线性表/dataStructure_day01.md
-          - 02: 线性表/dataStructure_day02.md
-          - 03: 线性表/dataStructure_day03.md
-          - 单链表: 线性表/单链表.md
-          - 顺序表: 线性表/顺序表.md
-          - 单链表(代码): 线性表/单链表(代码).md
-          - 循环链表: 线性表/循环链表.md
-          - 双向链表: 线性表/双向链表.md
+          - 01: file/数据结构/线性表/dataStructure_day01.md
+          - 02: file/数据结构/线性表/dataStructure_day02.md
+          - 03: file/数据结构/线性表/dataStructure_day03.md
+          - 单链表: file/数据结构/线性表/单链表.md
+          - 顺序表: file/数据结构/线性表/顺序表.md
+          - 单链表(代码): file/数据结构/线性表/单链表(代码).md
+          - 循环链表: file/数据结构/线性表/循环链表.md
+          - 双向链表: file/数据结构/线性表/双向链表.md
       - 栈和队列:
-          - 顺序栈: 线性表/顺序栈.md
-          - 链栈: 线性表/链栈.md
-          - 顺序循环队列: 线性表/顺序队列.md
-          - 链式队列: 线性表/链式队列.md
-      - 二叉树: 二叉树/二叉树.md
+          - 顺序栈: file/数据结构/线性表/顺序栈.md
+          - 链栈: file/数据结构/线性表/链栈.md
+          - 顺序循环队列: file/数据结构/线性表/顺序队列.md
+          - 链式队列: file/数据结构/线性表/链式队列.md
+      - 二叉树: file/数据结构/二叉树/二叉树.md
   - 数据结构实验:
-      - 顺序表: 数据结构实验/学生通讯录(顺序表).md
-      - 链表: 数据结构实验/学生通讯录(单链表).md
-      - 走迷宫问题: 数据结构实验/走迷宫（栈实现）.md
+      - 顺序表: file/数据结构/数据结构实验/学生通讯录(顺序表).md
+      - 链表: file/数据结构/数据结构实验/学生通讯录(单链表).md
+      - 走迷宫问题: file/数据结构/数据结构实验/走迷宫（栈实现）.md
   - 排序算法:
-      - 冒泡排序: sortAlgorithm/bubbleSort.md
-      - 计数排序: sortAlgorithm/countingSort.md
-      - 堆排序: sortAlgorithm/heapSort.md
-      - 插入排序: sortAlgorithm/insertionSort.md
-      - 归并排序: sortAlgorithm/mergeSort.md
-      - 快速排序: sortAlgorithm/quickSort.md
-      - 选择排序: sortAlgorithm/selectionSort.md
-      - 希尔排序: sortAlgorithm/shellSort.md
+      - 冒泡排序: file/数据结构/sortAlgorithm/bubbleSort.md
+      - 计数排序: file/数据结构/sortAlgorithm/countingSort.md
+      - 堆排序: file/数据结构/sortAlgorithm/heapSort.md
+      - 插入排序: file/数据结构/sortAlgorithm/insertionSort.md
+      - 归并排序: file/数据结构/sortAlgorithm/mergeSort.md
+      - 快速排序: file/数据结构/sortAlgorithm/quickSort.md
+      - 选择排序: file/数据结构/sortAlgorithm/selectionSort.md
+      - 希尔排序: file/数据结构/sortAlgorithm/shellSort.md
 
 
 
