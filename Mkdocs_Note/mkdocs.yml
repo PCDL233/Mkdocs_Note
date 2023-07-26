@@ -84,6 +84,11 @@ nav:
           - 25-其他内置方法: file/Python_Study/Python学习-黑马程序/25-其他内置方法.md
           - 26-面向对象3大特性: file/Python_Study/Python学习-黑马程序/26-面向对象3大特性.md
           - 27-类型注解: file/Python_Study/Python学习-黑马程序/27-类型注解.md
+          - 28-数据分析案例: file/Python_Study/Python学习-黑马程序/28-数据分析案例.md
+          - 29-sql数据库: file/Python_Study/Python学习-黑马程序/29-sql数据库.md
+          - 30-python操作MySQL: file/Python_Study/Python学习-黑马程序/30-python操作MySQL.md
+          - 31-将28的数据分析案例导入MySQL数据库: file/Python_Study/Python学习-黑马程序/31-将28的数据分析案例导入MySQL数据库.md
+          - 32-从MySQL数据导出数据生成txt文件: file/Python_Study/Python学习-黑马程序/32-从MySQL数据导出数据生成txt文件.md
   - 数据结构学习:
       - 线性表:
           - 01: file/数据结构/线性表/dataStructure_day01.md
